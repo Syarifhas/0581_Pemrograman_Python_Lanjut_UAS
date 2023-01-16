@@ -1,0 +1,28 @@
+mkdir script
+
+cd script
+
+mkdir makanan, makanan\buah, makanan\buah\apel, makanan\buah\jeruk, makanan\sayur
+
+new-item makanan\buah\pisang.txt, makanan\buah\stroberi.txt, makanan\buah\bluberi.txt, makanan\buah\apel\madu.txt, makanan\buah\jeruk\nipis.txt, makanan\sayur\wortel.txt
+
+mkdir src
+
+new-item src\list-directory-konten.py
+
+code .
+
+cd src
+
+python .\list-directory-konten.py
+
+python list-directory-konten.py > makanan-directory.txt
+
+new-item update-namafile.py
+
+python update-namafile.py
+
+python list-directory-konten.py
+
+python list-directory-konten.py > makanan-directory-last-modified.txt
+
